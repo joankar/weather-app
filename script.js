@@ -1,3 +1,6 @@
+
+     /*JavaScript*/
+
 const apiKey = "cf2160570742bf5dcf9188a52bd781cc";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -40,12 +43,8 @@ else if(data.weather[0].main == "Mist"){
 document.querySelector(".weather").style.display = "block";
 document.querySelector(".error").style.display = "none";
     }
-
-
     
-
 }
-
 
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
